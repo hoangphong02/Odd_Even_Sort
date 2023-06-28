@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo.png">
+    <title>Odd-even Sort</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+</head>
+<body>
+    
+    <header class="container">
+        <h1>Sorting Algorithm: Odd-even Sort</h1>  
+    </header>
+    <main class="container">
+        <div class="inputNum">
+            <p>Enter the number of elements  <input type="text" value="" id="valueinput" onkeydown="checkinput()"> </p>
+        </div>
+        <div class="checkb">
+            <div class="cntr">
+            <input checked="" type="checkbox" name="check" id="checkbox1" class="hidden-xs-up">
+            <label for="checkbox1" class="checkbox1"></label>
+            </div>
+            <p>Do you want to enter the values ​​of the elements in the array?</p>
+        </div>
+        
+        <div id="data"></div>
+
+        <div class="valueData">
+            <p>Data from file :  </p>
+            <div class="tam"> <input type="file" id="inputFile" >
+                <div id="output"></div>
+            </div>
+        </div>
+
+        <div class="codeandbar">
+            
+                <div class="coderun">
+                    <div class="top">
+                        <div class="dots">
+                            <div class="dot dot-1"></div>
+                            <div class="dot dot-2"></div>
+                            <div class="dot dot-3"></div>
+                          </div>
+                    </div>
+
+                    <p><span class="blue">let</span><span class="skyblue"> flag</span> <span>=</span><span class="blue"> true</span>
+                        ;</p>
+                    <p> <span class="violet">while (</span>  <span class="blue">flag</span> <span class="violet">) {</span>
+                        </p>
+                    <p> <span class="skyblue">flag</span> <span>= </span><span class="blue">false</span> ;
+                       </p>
+                    <p id="line1"> <span class="violet">for</span> <span> </span> <span class="blue">( let</span> <span class="skyblue">i</span> <span>=</span> <span class="green">0</span>;
+                        <span class="skyblue">i</span> <span><</span> <span class="skyblue"> e</span> <span>- 1</span>; <span class="skyblue">i</span> <span>+=</span> <span class="green">2</span> <span class="blue">) {</span>
+                        </p>
+                    <p> <span class="blue">var</span> <span class="skyblue">value1</span> <span>=</span> <span class="orange">parseInt</span> <span class="yellow">(</span> <span class="skyblue">bars</span> <span class="violet">[</span>
+                        <span class="skyblue">i</span> <span class="violet">]</span>. <span class="blue">childNodes</span> <span class="violet">[</span> <span class="green">0</span> <span class="violet">]</span>. <span class="skyblue">innerHTML</span>
+                        <span class="yellow">)</span>;
+                        </p>
+                    <p> <span class="blue">var</span> <span class="skyblue">value2</span> <span>=</span> <span class="orange">parseInt</span> <span class="yellow">(</span> <span class="skyblue">bars</span> <span class="violet">[</span>
+                        <span class="skyblue">i </span> <span>+</span> <span class="green">1</span> <span class="violet">]</span>. <span class="blue">childNodes</span> <span class="violet">[</span> <span class="green">0</span> <span class="violet">]</span>. <span class="skyblue">innerHTML</span>
+                        <span class="yellow">)</span>;
+                        </p>
+                    <p id="line2"> <span class="violet">if</span> <span class="yellow">(</span> <span class="skyblue">value1</span> <span>> </span> <span class="skyblue">value2</span> <span class="yellow">)</span> <span class="yellow">{</span>
+                        </p>
+                    <p id="line3"> <span class="violet">[</span> <span class="skyblue">value1</span>,<span class="skyblue">value2</span> <span> = </span> <span class="skyblue">value2</span>,<span class="skyblue">value1</span> <span class="violet">]</span>
+                        </p>
+                    <p> <span class="skyblue">flag</span> <span>= </span><span class="blue">true</span> ; <span class="yellow">}</span> <span class="violet">}</span> 
+                        </p>
+                    <p id="line4"><span class="violet">for</span> <span> </span> <span class="blue">( let</span> <span class="skyblue">i</span> <span>=</span> <span class="green">1</span>;
+                        <span class="skyblue">i</span> <span><</span> <span class="skyblue"> e</span> <span>- 1</span>; <span class="skyblue">i</span> <span>+=</span> <span class="green">2</span> <span class="blue">) {</span>
+                         </p>
+                    <p> <span class="blue">var</span> <span class="skyblue">value3</span> <span>=</span> <span class="orange">parseInt</span> <span class="yellow">(</span> <span class="skyblue">bars</span> <span class="violet">[</span>
+                        <span class="skyblue">i</span> <span class="violet">]</span>. <span class="blue">childNodes</span> <span class="violet">[</span> <span class="green">0</span> <span class="violet">]</span>. <span class="skyblue">innerHTML</span>
+                        <span class="yellow">)</span>;
+                        </p>
+                    <p> <span class="blue">var</span> <span class="skyblue">value4</span> <span>=</span> <span class="orange">parseInt</span> <span class="yellow">(</span> <span class="skyblue">bars</span> <span class="violet">[</span>
+                        <span class="skyblue">i </span> <span>+</span> <span class="green">1</span> <span class="violet">]</span>. <span class="blue">childNodes</span> <span class="violet">[</span> <span class="green">0</span> <span class="violet">]</span>. <span class="skyblue">innerHTML</span>
+                        <span class="yellow">)</span>;
+                        </p>
+                    <p id="line5"><span class="violet">if</span> <span class="yellow">(</span> <span class="skyblue">value3</span> <span>> </span> <span class="skyblue">value4</span> <span class="yellow">)</span> <span class="yellow">{</span>
+                        </p>
+                    <p id="line6"><span class="violet">[</span> <span class="skyblue">value3</span>,<span class="skyblue">value4</span> <span> = </span> <span class="skyblue">value4</span>,<span class="skyblue">value3</span> <span class="violet">]</span>
+                        </p>
+                    <p><span class="skyblue">flag</span> <span>= </span><span class="blue">true</span> ; <span class="yellow">}</span> <span class="blue">} </span> <span class="violet">} </span>
+                        </p>
+                </div>
+        
+            
+        <!-- <div class="coderun">
+            <p>let flag = false;</p>
+            <p>while(!flag){</p>
+            <p>flag = true; </p>
+            <p id="line1"> for (let i = 0; i < e - 1; i += 2) {</p>
+            <p> var value1 = parseInt(bars[i].childNodes[0].innerHTML);</p>
+            <p> var value2 = parseInt(bars[i + 1].childNodes[0].innerHTML);</p>
+            <p id="line2">if (value1 > value2) {</p>
+            <p id="line3">[value1,value2 = value2, value1]</p>
+            <p>flag = false;  } }</p>
+            <p id="line4"> for (let i = 1; i < e - 1; i += 2) {</p>
+            <p> var value3 = parseInt(bars[i].childNodes[0].innerHTML);</p>
+            <p> var value4 = parseInt(bars[i + 1].childNodes[0].innerHTML);</p>
+            <p id="line5">if (value3 > value4) {</p>
+            <p id="line6">[value3,value4 = value4, value3]</p>
+            <p>flag = false;  } } }</p>
+        </div> -->
+       
+        <div class="numberData" id="number_data">
+        <div class="data-sort" id="datasort"></div>
+        <div id="number-list"></div>
+        </div>
+
+
+        </div>
+        
+
+        <div class="btn">
+        <!-- <button class="button-30" role="button" id="run" onclick="runOddevenSort();setcolorrun()">Run Odd-even Sort</button> -->
+        <button class="button-30" role="button" id="run" onclick="Odd_evenSort1();setcolorrun()">Run Odd-even Sort</button>
+        <button class="button-30" role="button" id="newA" onclick="newarr();newarr1()">New Array</button>
+        <!-- <button class="button-30" role="button" id="stepBack" onclick="stepBack()">Step Back</button> -->
+        <button class="button-30" role="button" id="pause" onclick="pause1()" >Pause</button>
+        <button class="button-30" role="button" id="continue" onclick="continue1()" >Continue</button> 
+        <input type="range" id="speed">
+     
+        <!-- <button class="button-30" role="button" id="stepforward" onclick="stepForward()">Step Forward</button> -->
+    </div>
+    </main>
+    <footer class="container">
+        <div class="foott">
+            <p><b>© Can Tho University - College of Information and Communication Technology</b></p>
+            <p>Fundamental Theis Topic of <b>Software Engineering</b></p>
+            <p>Performed by student: <b>Pham Hoang Phong</b></p>
+            <p>Student ID: <b>B2012243</b></p>
+            </div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
